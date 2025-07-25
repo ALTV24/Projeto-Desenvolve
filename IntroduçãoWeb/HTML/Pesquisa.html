@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <tittle>Formulário</tittle>
+ </head>
+  <body>
+    <form method="post" action="procesar-pesquisa.html"></form>
+   <h1>
+        Pesquisa de Satisfação
+    </h1>
+    <h2> 
+        Dados pessoais
+    </h2>
+    <form>
+         <p>
+         <label for="Nome">Nome:</label>
+         <input type="text" placeholder="Nome" id="Nome" />
+         </p>
+        
+         <p>
+         <label for="Email"> Email:</label>
+         <input type="email" placeholder="Email" id="Email" />
+         </p>
+         
+         <p>
+         <label for="Telefone">Telefone:</label>
+         <input type= "tel" placeholder="Telefone" id="Telefone" />
+         </p>
+
+         <p>
+           Estado Civil:
+            <select>
+                <option>Solteiro</option>
+                <option>Casado</option>
+                <option>Divorciado</option>
+                <option>Viuvo</option>
+                <option>Desacreditado</option>
+            </select>
+         </p>
+
+         <p>
+            <h3>Você recomendaria nosso site para um amigo ou familiar? </h3>
+            <input type="radio" id="Sim" name="recomendaria"/>
+            <label for="Sim">Sim</label>
+            <input type="radio" id="Não" name="recomendaria"/>
+            <label for="Não">Não</label>
+         </p>
+         
+         <p>
+            <h3>Como você tomou conhecimento de nosso site?</h3>
+            <input type="radio" id="Pesquisa" name="conhecimento"/>
+            <label for="Pesquisa">Pesquisa</label>
+            <input type="radio" id="Propaganda / Indicação" name="conhecimento"/>
+            <label for="Propaganda">Propaganda / Indicação</label>
+          </p>
+         
+         <p>
+            <h3>Você considera que nosso site atende plenamente às suas necessidades? Se não, como podemos melhorar?</h3>
+            <textarea>Sua resposta, por favor.</textarea>
+         </p> 
+         
+         <p>
+            <h3>Você autoriza a utilização desses dados com terceiros, afim de melhorar a qualidade do nosso site?</h3>
+            <input type="checkbox" id="autoriza" />
+            <label for="autoriza">Sim.</label>
+         </p>
+         <p>
+            <input type="submit" value="Enviar"/>
+         </p>
+    </form>
+  </body>
+</html>
