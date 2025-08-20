@@ -1,0 +1,75 @@
+html {
+    background-color: beige;
+    color: #0d053b
+}
+
+body {
+    min-width: 100vh;
+    align-content: center;
+}
+
+.destaque {
+    color: #E00705;
+}
+
+footer {
+    color: rgb(253, 173, 0);
+}
+
+footer:hover {
+    color: rgb(4, 0, 255);
+}
+
+.h1 {
+    font-family: Arial;
+}
+
+html {
+    font-family: bold
+}
+
+header {
+    color: rgb(38, 0, 253)
+}
+
+header {
+    display: flex;
+    background-color: rgba(160, 224, 224, 0.788);
+    padding: 20px;
+    border-bottom: 20px solid 1em;
+    text-align: center;
+    justify-content: center;
+}
+
+#menu {
+    list-style-type: none;
+
+}
+
+a {
+    color:#e08805
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width:600px){
+    #menu {
+        flex-direction: column;
+    }
+}
+
+.educação {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.experiencia {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
