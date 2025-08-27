@@ -1,0 +1,7 @@
+Inicio;
+Leia n;
+n1= n-1
+n2 = 10-n1
+r= (n1x10)+n2
+Imprima r 
+Fim
