@@ -32,6 +32,8 @@ while n>0:
 if x > maior:
     maior = x
     n = n-1
+else:
+    n = n-1
 print(f"O maior número digitado foi: {maior}")
 
 #5. Um instituto realizou uma pesquisa de público e precisa calcular a média de idade dos respondentes. Escreva um programa que leia um inteiro N com a quantidade de respondentes e em seguida leia as N idades de cada respondente. Ao final, imprima a média das idades.
