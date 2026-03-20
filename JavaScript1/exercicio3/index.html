@@ -5,9 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <h1>Temporizador</h1>
-    O ano já começou, mas ainda tem muito tempo para aproveitar. Use o temporizador abaixo para contar os dias, horas, minutos e segundos restantes até o final do ano.
-    <div id="temporizador"></div>
+    <title>Temporizador</title>
+    <h1>
+        Contagem regressiva para o final do ano
+    </h1>
+    <style>
+        #temporizador {
+            font-family: Times, 'Times New Roman', serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #dias {
+            font-size: 70px;
+        }
+        #horas {
+            font-size: 60px;
+        }
+        #minutos {
+            font-size: 50px;
+        }
+        #segundos {
+            font-size: 40px;
+        }
+    </style>
+    <p>
+        O ano já começou, mas ainda tem muito tempo para aproveitar. 
+        Acompanhe no temporizador abaixo para saber os dias, horas, minutos e segundos restantes até o final do ano.
+    </p>
+    <div id="temporizador">
+     <div id="dias"></div>
+     <div id="horas"></div>
+     <div id="minutos"></div>
+     <div id="segundos"></div>
+     </div>
+    <div>
     <script src="./exercicio.js"></script>
+    </div>
 </body>
 </html>
