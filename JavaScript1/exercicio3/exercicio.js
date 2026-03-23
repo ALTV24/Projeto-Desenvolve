@@ -16,6 +16,5 @@ function atualizarTemporizador() {
     document.getElementById("minutos").textContent = `${tempoRestante.minutos} minutos`;
     document.getElementById("segundos").textContent = `${tempoRestante.segundos} segundos`;
 }
-
+const intervalo = setInterval(atualizarTemporizador, 1000);
 atualizarTemporizador();
-setInterval(atualizarTemporizador, 1000);
