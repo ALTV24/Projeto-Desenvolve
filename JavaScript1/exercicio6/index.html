@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Post</title>
+</head>
+<body>
+<div class="post">
+  <h2>Deixe seu like</h2>
+  <img src="fotodalua.jpg">
+  <input type="text" id="nome" placeholder="Digite seu nome">
+  <button onclick="curtir()">Curtir ❤️</button>
+  <button id="limparStorage">Limpar Curtidas</button>
+  <p id="resultado">Ninguém curtiu</p>
+  <ul id="listaCurtidas"></ul>
+  <p id="contador"></p>
+</div>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #fe3b00);
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #fff;
+}
+
+  .post {
+    width: 400px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  button {
+    margin-top: 10px;
+  }
+</style>
+
+</body>
+<script src="exercicio.js"></script>
+</html>
