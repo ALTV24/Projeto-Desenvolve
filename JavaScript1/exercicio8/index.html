@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+</head>
+
+<body>
+ <style>
+  body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, #07e5ec, #000000fd);
+    padding: 20px;
+}
+
+  h1, h2 {
+    text-align: center;
+    color: #fff;
+  }
+
+  textarea {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    resize: none;
+  }
+
+  #adicionarTarefa {
+    display: block;
+    margin: 10px auto;
+    background-color: #0aa72f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #adicionarTarefa:hover {
+    background-color: #218837;
+  }
+
+  #adicionarTarefa:active {
+    transform: scale(0.95);
+  }
+
+  .task-list {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+
+  .task-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.2s;
+  }
+
+  .task-item:hover {
+    transform: scale(1.02);
+  }
+
+  .task-checkbox {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .task-description {
+    font-size: 16px;
+    color: #333;
+  }
+
+  .task-checkbox:checked + .task-description {
+    text-decoration: line-through;
+    color: #888;
+  }
+
+/* Botão de excluir */
+  .delete-btn {
+    margin-left: auto;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s;
+  }
+
+  .delete-btn:hover {
+    transform: scale(1.2);
+    color: red;
+  }
+ </style>
+
+    <h1>Lista de tarefas</h1>
+    <p id="contador" style="text-align: center; color: white;"></p>
+ <textarea
+    id="descricaoTarefa"
+    rows="3" 
+    placeholder="Digite o novo corre de hoje...">
+ </textarea>
+ <br><br>
+ <button id="adicionarTarefa">Adicionar Tarefa</button>
+ <h2>Minhas Tarefas</h2>
+ <ul id="listaTarefas" class="task-list"></ul>
+    <script src="./script.js"></script>
+</body>
+
+</html>

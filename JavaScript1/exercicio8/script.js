@@ -42,7 +42,11 @@ function renderTasks() {
             atualizarContador();
         });
 
+        const id = `task-${index}`;
+        checkbox.id = id;
+
         const label = document.createElement("label");
+        label.setAttribute("for", id); // ✅ agora funciona
         label.textContent = task.description;
         label.classList.add("task-description");
 
@@ -65,7 +69,7 @@ function renderTasks() {
         setTimeout(() => {
             li.style.transition = "0.6s";
             li.style.opacity = "1";
-            li.style.transform = "translateY(30px)";
+            li.style.transform = "translateY(0)";
         }, 50);
 
         li.appendChild(checkbox);
@@ -81,3 +85,5 @@ function atualizarContador() {
     const concluidas = taskList.filter(task => task.status).length;
     document.getElementById("contador").textContent = `Total: ${total} | Concluídas: ${concluidas}`;
 }
+renderTasks();
+atualizarContador();
